@@ -1,0 +1,13 @@
+{
+  "name": "Entre Algoritmos e Sonhos",
+  "short_name": "Algoritmos e Sonhos",
+  "description": "Uma plataforma educacional para explorar interesses, áreas, cursos e profissões.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf9f5",
+  "theme_color": "#6c2bff",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
