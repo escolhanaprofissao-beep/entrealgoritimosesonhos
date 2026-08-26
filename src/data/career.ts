@@ -79,3 +79,152 @@ const courseRows: Array<[string, string, string, string, string[], RiasecCode[],
 ]
 
 export const courses: Course[] = courseRows.map(([name, area, type, time, keys, codes, description]) => ({ name, area, type, time, keys, codes, description }))
+export type Profession = {
+  name: string
+  slug: string
+  course: string
+  description: string
+  areas: string[]
+  workplaces: string[]
+  paths: string[]
+}
+
+export const professions: Profession[] = [
+  {
+    name: 'Médico',
+    slug: 'medicina',
+    course: 'Medicina',
+    description:
+      'Profissional da área da saúde que atua na prevenção, investigação, diagnóstico e tratamento de doenças, conforme sua formação e área de atuação.',
+    areas: [
+      'Clínica',
+      'Cirurgia',
+      'Pediatria',
+      'Cardiologia',
+      'Psiquiatria',
+      'Pesquisa',
+    ],
+    workplaces: [
+      'Hospitais',
+      'Clínicas',
+      'Unidades de saúde',
+      'Instituições de pesquisa',
+    ],
+    paths: [
+      'Medicina → Atendimento clínico',
+      'Medicina → Especialização',
+      'Medicina → Pesquisa',
+      'Medicina → Gestão em saúde',
+    ],
+  },
+
+  {
+    name: 'Enfermeiro',
+    slug: 'enfermagem',
+    course: 'Enfermagem',
+    description:
+      'Profissional da área da saúde que participa da assistência, cuidado, prevenção e promoção da saúde.',
+    areas: [
+      'Assistência hospitalar',
+      'Saúde pública',
+      'Urgência e emergência',
+      'Gestão',
+      'Educação em saúde',
+    ],
+    workplaces: [
+      'Hospitais',
+      'Clínicas',
+      'Unidades de saúde',
+      'Instituições de ensino',
+    ],
+    paths: [
+      'Enfermagem → Assistência',
+      'Enfermagem → Saúde pública',
+      'Enfermagem → Gestão',
+      'Enfermagem → Educação em saúde',
+    ],
+  },
+
+  {
+    name: 'Psicólogo',
+    slug: 'psicologia',
+    course: 'Psicologia',
+    description:
+      'Profissional que atua em diferentes contextos relacionados aos processos psicológicos e ao comportamento humano, de acordo com sua formação e habilitação.',
+    areas: [
+      'Psicologia clínica',
+      'Psicologia escolar',
+      'Psicologia organizacional',
+      'Hospitais',
+      'Pesquisa',
+    ],
+    workplaces: [
+      'Clínicas',
+      'Escolas',
+      'Hospitais',
+      'Empresas',
+      'Instituições de pesquisa',
+    ],
+    paths: [
+      'Psicologia → Clínica',
+      'Psicologia → Escolar',
+      'Psicologia → Organizacional',
+      'Psicologia → Pesquisa',
+    ],
+  },
+
+  {
+    name: 'Cientista de Dados',
+    slug: 'cientista-de-dados',
+    course: 'Ciência da Computação',
+    description:
+      'Profissional que utiliza programação, estatística, análise de dados e ferramentas computacionais para investigar problemas e apoiar decisões.',
+    areas: [
+      'Análise de dados',
+      'Inteligência artificial',
+      'Machine learning',
+      'Estatística',
+      'Tecnologia',
+    ],
+    workplaces: [
+      'Empresas de tecnologia',
+      'Bancos',
+      'Startups',
+      'Empresas de diferentes setores',
+      'Instituições de pesquisa',
+    ],
+    paths: [
+      'Tecnologia → Dados',
+      'Tecnologia → Inteligência artificial',
+      'Tecnologia → Machine learning',
+      'Tecnologia → Pesquisa',
+    ],
+  },
+
+  {
+    name: 'Engenheiro Civil',
+    slug: 'engenharia-civil',
+    course: 'Engenharia Civil',
+    description:
+      'Profissional que atua em atividades relacionadas a projetos, construção, infraestrutura e acompanhamento de obras.',
+    areas: [
+      'Construção civil',
+      'Infraestrutura',
+      'Estruturas',
+      'Gestão de obras',
+      'Saneamento',
+    ],
+    workplaces: [
+      'Construtoras',
+      'Escritórios de engenharia',
+      'Empresas de infraestrutura',
+      'Órgãos públicos',
+    ],
+    paths: [
+      'Engenharia Civil → Construção civil',
+      'Engenharia Civil → Estruturas',
+      'Engenharia Civil → Gestão de obras',
+      'Engenharia Civil → Infraestrutura',
+    ],
+  },
+]
