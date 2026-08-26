@@ -7,6 +7,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'google-site-verification', content: 'IRQY_CSbhONA8-jE3TiUS_K6jjzPikxv0BM3qG6SKPo' },
       { name: 'theme-color', content: '#6c2bff' },
       { name: 'description', content: 'Descubra interesses, áreas, cursos e profissões com um questionário educacional inspirado no modelo RIASEC.' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
